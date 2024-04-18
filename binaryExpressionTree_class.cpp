@@ -96,12 +96,22 @@ double binaryExpressionTree::evaluateExpressionTree(nodeType<string>* p) {
     }
 }
 
-bool binaryExpressionTree::search(const string& value) {
+bool binaryExpressionTree::search(const string& searchItem) const {
+    // Provide the implementation for the search function here
+    // For now, you can return a dummy value or print a message
+    cout << "Search function called with item: " << searchItem << endl;
     return false;
 }
 
-void binaryExpressionTree::insert(const string& value) {
+void binaryExpressionTree::insert(const string& insertItem) {
+    // Provide the implementation for the insert function here
+    // For now, you can print a message
+    cout << "Insert function called with item: " << insertItem << endl;
 }
 
-void binaryExpressionTree::deleteNode(const string& value) {
+void binaryExpressionTree::deleteNode(const string& deleteItem) {
+    // Provide the implementation for the deleteNode function here
+    // For now, you can print a message
+    cout << "DeleteNode function called with item: " << deleteItem << endl;
 }
+

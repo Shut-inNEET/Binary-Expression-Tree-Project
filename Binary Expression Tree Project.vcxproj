@@ -128,15 +128,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="binaryExpressionTree_class.cpp" />
-    <ClCompile Include="binaryTree_class.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="OutData.txt" />
     <Text Include="RpnData.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="binaryExpressionTree_class.h" />
-    <ClInclude Include="binaryTree_class.h" />
+    <ClInclude Include="binaryTree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

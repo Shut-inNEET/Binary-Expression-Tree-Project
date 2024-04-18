@@ -6,9 +6,16 @@
 using namespace std;
 
 int main() {
-    ifstream inFile("RpnData.txt");
+    ifstream inFile("RpnData.txt"); // Open the input file
+    ofstream outFile("OutData.txt"); // Open the output file
+
     if (!inFile) {
-        cout << "Unable to open the input file." << endl;
+        cout << "Unable to open RpnData.txt" << endl;
+        return 1;
+    }
+
+    if (!outFile) {
+        cout << "Unable to open OutData.txt" << endl;
         return 1;
     }
 
@@ -19,9 +26,11 @@ int main() {
         expTree.destroyTree();  // Clear the current expression tree
         expTree.buildExpressionTree(expression);
         double result = expTree.evaluateExpressionTree();
-        cout << "Expression: " << expression << " = " << result << endl;
+        outFile << "Expression: " << expression << " = " << result << endl;
     }
 
-    inFile.close();
+    inFile.close(); // Close the input file
+    outFile.close(); // Close the output file
+
     return 0;
 }

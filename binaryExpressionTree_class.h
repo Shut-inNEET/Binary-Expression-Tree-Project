@@ -11,13 +11,27 @@ using namespace std;
 
 class binaryExpressionTree : public binaryTree<string> {
 public:
+    
+    // Builds an expression tree
+    // Precondition: postfixExpression is a valid postfix expression string
+    // Postcondition: A binary expression tree is built from the postfix expression
     void buildExpressionTree(const string& postfixExpression);
+    
+    // Evaluates the expression tree
+    // Precondition: The binary expression tree has been built
+    // Postcondition: The value of the expression represented by the binary expression tree is returned
     double evaluateExpressionTree();
-    virtual bool search(const string& value) = 0;
-    virtual void insert(const string& value) = 0;
-    virtual void deleteNode(const string& value) = 0;
+
+    // Pure virtual functions from abstract class binaryTree
+    bool search(const string& searchItem) const override;
+    void insert(const string& insertItem) override;
+    void deleteNode(const string& deleteItem) override;
 
 private:
+    
+    // Function: Evaluates the expression tree
+    // Precondition: The binary expression tree has been built correctly, and p points to a valid node in the tree.
+    // Postcondition: The function recursively evaluates the expression tree rooted at the node pointed to by p and returns the result as a double value.
     double evaluateExpressionTree(nodeType<string>* p);
 };
 

@@ -21,12 +21,12 @@
     <ClCompile Include="binaryExpressionTree_class.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="binaryTree_class.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="RpnData.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="OutData.txt">
       <Filter>Source Files</Filter>
     </Text>
   </ItemGroup>
@@ -34,7 +34,7 @@
     <ClInclude Include="binaryExpressionTree_class.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="binaryTree_class.h">
+    <ClInclude Include="binaryTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
